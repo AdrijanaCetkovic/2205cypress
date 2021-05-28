@@ -31,9 +31,9 @@ describe('delete gallery', () => {
 
 
 
-            cy.intercept('DELETE', `https://gallery-api.vivifyideas.com/api/galleries/${galleryId}`, (req) => {}).as('validDelete')
+            //       cy.intercept('DELETE', `https://gallery-api.vivifyideas.com/api/galleries/${galleryId}`, (req) => {}).as('validDelete')
 
-            navigation.clickSelectCreatedGallery()
+            navigation.clickSelectCreatedGallery() //pageobject
             navigation.clickDeleteGallery()
 
             // cy.wait('@validDelete').then((intercept) => {
@@ -50,21 +50,3 @@ describe('delete gallery', () => {
     })
 
 })
-
-it('delete created gallery', () => {
-    cy.intercept('DELETE', `https://gallery-api.vivifyideas.com/api/galleries/${galleryId}`, (req) => {}).as('validDelete')
-
-    navigation.clickSelectCreatedGallery()
-    navigation.clickDeleteGallery()
-        // cy.wait('@validDelete').then((intercept) => {
-        //     cy.log(JSON.stringify(intercept.response.statusCode))
-        //     cy.log(JSON.stringify(intercept.response.method))
-        //     expect(intercept.response.statusCode).to.eql('DELETE')
-
-    // })
-
-    cy.on('window:confirm', () => true);
-
-})
-
-// })
