@@ -1,0 +1,14 @@
+{
+    "baseUrl": "https://gallery-app.vivifyideas.com/",
+
+    "env": {
+        "userName": "adrijatik1984@gmail.com",
+        "password": "as332101",
+        "firstName": "Viki",
+        "lastName": "Popadic",
+        "email": "vaikicapopadicka@gmail.com",
+        "passwordReg": "as332101",
+        "passwordRegConfirm": "as332101"
+    }
+
+}

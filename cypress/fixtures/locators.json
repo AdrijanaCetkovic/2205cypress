@@ -1,0 +1,48 @@
+{
+    "navigation": {
+        "loginButton": "a[href='/login']",
+        "logoutButton": ".ml-auto > :nth-child(3) > .nav-link",
+        "registerButton": "a[href='/register']",
+        "createGallery": "a[href='/create']",
+        "navigationBar": ".navbar",
+        "galleryAppNavButton": ".navbar-brand",
+        "allGalleriesNavButton": ".mr-auto > :nth-child(1) > .nav-link"
+
+    },
+
+    "loginPage": {
+        "email": "input[id='email']",
+        "password": "input[id='password']",
+        "submitBtn": "button[type='submit']",
+        "emailError": "form > .alert.alert-danger",
+        "h1Header": "h1"
+
+    },
+
+    "registerPage": {
+        "h1Header": "h1",
+        "fistNameLabel": ":nth-child(1) > label",
+        "firstName": "input[id='first-name']",
+        "lastName": "input[id='last-name']",
+        "email": "input[id='email']",
+        "password": "input[id='password']",
+        "rePassword": "input[id='password-confirmation']",
+        "terms": "input[class='form-check-input']",
+        "submit": "button[type='submit']",
+        "emailValidationError": ":nth-child(3) > .alert",
+        "passwordValidationError": "div:nth-of-type(4) > .alert.alert-danger",
+        "termsValidationError": "div:nth-of-type(6) > .alert.alert-danger"
+
+    },
+
+    "createGalleryPage": {
+        "h1Header": ".title-style",
+        "title": "input[id='title']",
+        "description": "input[id='description']",
+        "imageUrl": ".input-group.mb-3 > .form-control",
+        "submit": "form > button:nth-of-type(1)",
+        "titleError": "div:nth-of-type(1) > .alert.alert-danger",
+        "imageUrlError": ".form-group > .alert.alert-danger",
+        "descriptionError": "div:nth-of-type(2) > .alert.alert-danger"
+    }
+}
